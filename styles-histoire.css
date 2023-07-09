@@ -1,0 +1,188 @@
+.histoire{
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    font-family: 'brownlight';
+    font-size: 2.2rem;
+    font-style: normal;
+    font-weight: 100;
+    color: #9A6722;
+}
+.retour {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    font-size: 20px;
+}
+.retour a {
+    text-decoration: none;
+    color: #9A6722;
+}
+.box{
+    margin : 2%;
+    width :48%;
+    font-family: 'Cairo', sans-serif;
+    opacity: 0;
+    animation: boxAnimation 3s ease forwards;
+}
+
+
+.box h3{
+    font-size: 18px;
+}
+time{
+    font-size: 25px;
+    color: #9A6722;
+}
+.title-box1::after{
+    content: "Erich Rozewicz partage sa passion dans ses ateliers lors d'un cours de peinture sur porcelaine.";
+    display: block;
+    width: 100%;
+    font-size: 16px;
+    font-weight: 100;
+    margin-top: -9px;    
+}
+@keyframes boxAnimation {
+    0% {
+      opacity: 0;
+    }
+    100% {      
+      opacity: 1;
+    }
+  }
+.title-box1::after{
+    content: "Erich Rozewicz partage sa passion dans ses ateliers lors d'un cours de peinture sur porcelaine.";
+    display: block;
+    width: 100%;
+    font-size: 16px;
+    font-weight: 100;
+    margin-top: -9px;
+    
+}
+.title-box2::after{
+    content: "Erich Rozewicz partage sa passion dans ses ateliers lors d'un cours de peinture sur porcelaine.";
+    display: block;
+    width: 100%;
+    font-size: 16px;
+    font-weight: 100;
+    margin-top: -9px;
+    
+}
+.title-box3::after{
+    content: "Erich Rozewicz partage sa passion dans ses ateliers lors d'un cours de peinture sur porcelaine.";
+    display: block;
+    width: 100%;
+    font-size: 16px;
+    font-weight: 100;
+    margin-top: -9px;
+    
+}
+.title-box4::after{
+    content: "Erich Rozewicz partage sa passion dans.";
+    display: block;
+    width: 100%;
+    font-size: 16px;
+    font-weight: 100;
+    margin-top: -9px;
+    
+}
+.box:nth-child(even){
+    margin-left : 51%;
+    
+
+}
+
+.timeline{
+    position: relative;
+    background-color:rgba(245, 245, 245, 0.863);
+ 
+}
+
+.vertical-line{
+    border-left: 2px solid #9A6722;
+    height: 100%;
+    position: absolute;
+    left: 50%;
+    margin-left: -3px;
+    bottom: 0;
+}
+/*make a circle for each box*/
+.timeline::before{
+    content: '';
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    border: 2px solid #9A6722;
+    left: 49.4%;
+    top: 0px;
+    z-index: 1;
+    background-color: white;
+}
+.timeline::after{
+    content: '';
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    border: 2px solid #9A6722;
+    left: 49.423%;
+    bottom: 0;
+    z-index: 1;
+    background-color: white;
+}
+h4::before{
+    content: '';
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: #9A6722;
+    left: 49.6%;
+    z-index: 1;
+}
+@media (max-width: 1200px) {
+    .timeline::before{
+      left: 49.1%;
+    }
+    .timeline::after{
+        left: 49.1%;
+      }
+    h4::before{
+        left: 49.5%;
+    }
+  }
+@media (max-width: 764px) {
+    .timeline::before{
+      left: 48.6%;
+    }
+    .timeline::after{
+        left: 48.6%;
+    }
+    h4::before{
+        left: 49.3%;
+  }
+}
+@media (max-width: 432px) {
+    .timeline::before{
+      left: 47.5%;
+    }
+    .timeline::after{
+        left: 47.5%;
+    }
+    h4::before{
+        left: 48.3%;
+    }
+  }
+.card2{
+    margin-left: 200px;
+    margin-top: 30px;
+}
+.image{
+    border-radius: 0 0 0 0;
+}
+@media (max-width: 912px) {
+    .card2{
+      margin-left: 130px;
+    }
+  }
